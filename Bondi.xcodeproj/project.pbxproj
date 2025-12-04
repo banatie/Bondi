@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C761C80C2EE159EF005AF333 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C761C80B2EE159EF005AF333 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C761C7E22EE1097E005AF333 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		C761C7D32EE1097B005AF333 /* Bondi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bondi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C761C7E12EE1097E005AF333 /* BondiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BondiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C761C7EB2EE1097E005AF333 /* BondiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BondiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C761C80B2EE159EF005AF333 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		C761C7CA2EE1097B005AF333 = {
 			isa = PBXGroup;
 			children = (
+				C761C80B2EE159EF005AF333 /* README.md */,
 				C761C7D52EE1097B005AF333 /* Bondi */,
 				C761C7E42EE1097E005AF333 /* BondiTests */,
 				C761C7EE2EE1097E005AF333 /* BondiUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C761C80C2EE159EF005AF333 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
