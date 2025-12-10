@@ -1,13 +1,15 @@
 import SwiftUI
 
-struct TopView: View {
+struct InitialView: View {
+    @ObservedObject var viewModel: MeasurementViewModel
+    
     var body: some View {
         VStack {
             Text("Is your phone mounted in the car?")
                 .font(.title)
 
             Button(action: {
-                // Change the measurement state
+                viewModel.appState = .readyToMeasure
             }) {
                 Text("Yes")
                     .font(.title)
@@ -23,5 +25,5 @@ struct TopView: View {
 }
 
 #Preview {
-    TopView()
+    InitialView(viewModel: MeasurementViewModel())
 }

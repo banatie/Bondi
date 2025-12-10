@@ -1,21 +1,17 @@
-//
-//  ContentView.swift
-//  Bondi
-//
-//  Created by Eiji Iriyama on 2025/12/04.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var measurementViewModel = MeasurementViewModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        switch measurementViewModel.appState {
+        case .initial:
+            InitialView(viewModel: measurementViewModel)
+        case .readyToMeasure:
+            ReadyView(viewModel: measurementViewModel)
+        case .measuring:
+            MeasuringView(viewModel: measurementViewModel)
         }
-        .padding()
     }
 }
 
