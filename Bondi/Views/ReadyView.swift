@@ -5,7 +5,7 @@ struct ReadyView: View {
     
     var body: some View {
         VStack {
-            Text("Ready to start the game?")
+            Text("Are you fully stopped, and the engine is turned on?")
                 .font(.title)
 
             HStack {
