@@ -8,18 +8,33 @@ struct ReadyView: View {
             Text("Ready to start the game?")
                 .font(.title)
 
-            Button(action: {
-                viewModel.appState = .measuring
-            }) {
-                Text("Start")
-                    .font(.title)
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: 300)
-                    .padding()
-                    .background(.blue)
-                    .cornerRadius(12)
+            HStack {
+                Button(action: {
+                    viewModel.appState = .measuring
+                }) {
+                    Text("Yes")
+                        .font(.title)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: 300)
+                        .padding()
+                        .background(.blue)
+                        .cornerRadius(12)
+                }
+                .padding()
+                
+                Button(action: {
+                    viewModel.appState = .initial
+                }) {
+                    Text("No")
+                        .font(.title)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: 300)
+                        .padding()
+                        .background(.blue)
+                        .cornerRadius(12)
+                }
+                .padding()
             }
-            .padding()
         }
     }
 }
